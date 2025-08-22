@@ -1,5 +1,5 @@
 # Automation-Project-RaspberryPi
-This project implements a low-cost smart irrigation controller using a Raspberry Pi, an MCP3208 ADC, a soil moisture sensor, a toggle button, and a relay that powers a Gardena irrigation system. The Raspberry Pi reads soil moisture as a percentage, publishes telemetry to MQTT, and can automatically start/stop irrigation based on a configurable threshold with hysteresis. A physical button toggles automation mode.
+The purpose of this project is to design and implement an automatic irrigation system that is able to monitor soil moisture levels and water the plants whenever the soil becomes too dry. The system is intended to reduce manual work, optimize water consumption, and ensure that plants remain healthy. The main objective is to use a Raspberry Pi as the central controller, connected to a soil moisture sensor and a relay that switches the power supply of a Gardena irrigation system through a controlled outlet.
 
 ## Features
 - Soil moisture acquisition via MCP3208 (12-bit) → percentage with dry/wet calibration
