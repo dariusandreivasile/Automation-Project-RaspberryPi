@@ -21,3 +21,7 @@ The purpose of this project is to design and implement an automatic irrigation s
 - Sensor AO→MCP3208 CH0, Sensor VCC→3.3V, Sensor GND→GND
 - Button: one leg → GPIO17, opposite leg → GND (internal pull-up in code)
 - Relay IN→GPIO5, VCC→(module spec: 3.3V or 5V), GND→GND (common with Pi)
+
+## Implementation Progress
+The implementation started with the configuration of the RaspberryPi. Installed the OS on the SSD, and then configured the device. Used RealVNC Viewer to control it remotely.
+Then, began testing the connection, using a button connected to the Raspberry Pi in order to understand how to read digital inputs. This exercise provided a foundation for the logic later applied to the moisture sensor and the irrigation control.
