@@ -35,3 +35,44 @@ The next step was to connect the soil moisture sensor. Since the sensor provides
 <p align="center">
   <img src="photos/rpi_adc.jfif" width="600">
 </p>
+
+Now, the data can be read with the Raspberry Pi.
+
+<p align="center">
+  <img src="photos/citire_umiditate_rpi.JPG" width="600">
+</p>
+
+These are the values received when the sensor is in the air. It displays the reference value (3.3V) when it is dry.
+
+
+<p align="center">
+  <img src="photos/citire_umiditate_in_apa.JPG" width="600">
+</p>
+
+These are the values received when the sensor is in the water. The voltage drops to nearly 0.9V, which is the equivalent to 100% humidity.
+
+
+<p align="center">
+  <img src="photos/umiditate_procente.JPG" width="600">
+</p>
+
+Here, the humidity is also displayed in %.
+
+---
+
+Next up, created a payload with the state of the button and the soil humidity in %, sent it through MQTT and displayed it in dashboards in Grafana.
+
+
+<p align="center">
+  <img src="photos/payload_automation.JPG" width="600">
+</p>
+
+<p align="center">
+  <img src="photos/rpi_dashboard.jpg" width="600">
+</p>
+
+Then, connected the relay on the Raspberry Pi (3.3V, GND and GPIO5) and created a code that controls this relay with the button from earlier.
+
+<p align="center">
+  <img src="photos/poza_rpi.jfif" width="600">
+</p>
