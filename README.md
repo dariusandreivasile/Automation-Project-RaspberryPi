@@ -26,4 +26,4 @@ The purpose of this project is to design and implement an automatic irrigation s
 The implementation started with the configuration of the RaspberryPi. Installed the OS on the SSD, and then configured the device. Used RealVNC Viewer to control it remotely.
 Then, began testing the connection, using a button connected to the Raspberry Pi in order to understand how to read digital inputs. This exercise provided a foundation for the logic later applied to the moisture sensor and the irrigation control.
 
-<img src="photos/rpi.jpg" width="400">
+<img src="photos/rpi.JPG" width="400">
