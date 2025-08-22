@@ -83,7 +83,7 @@ As a last addition to this project, generated a code that automatically turns th
   <img src="photos/humidity_controlled_relay.JPG" width="600">
 </p>
 
----
+
 
 ## Conclusion
 
