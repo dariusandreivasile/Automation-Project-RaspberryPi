@@ -29,3 +29,9 @@ Then, began testing the connection, using a button connected to the Raspberry Pi
 <p align="center">
   <img src="photos/rpi.JPG" width="600" alt="Raspberry Pi running the script">
 </p>
+
+The next step was to connect the soil moisture sensor. Since the sensor provides an analog signal, it was connected through the MCP3208 converter to the Raspberry Pi using the SPI interface. The wiring was completed by linking VDD and VREF of the MCP3208 to 3.3V, AGND and DGND to ground, CLK to GPIO11, DOUT to GPIO9, DIN to GPIO10, and CS to GPIO8. The analog output of the sensor was connected to channel 0 of the MCP3208.
+
+<p align="center">
+  <img src="photos/rpi_adc.jfif" width="600">
+</p>
