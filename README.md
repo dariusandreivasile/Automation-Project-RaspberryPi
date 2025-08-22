@@ -58,7 +58,6 @@ These are the values received when the sensor is in the water. The voltage drops
 
 Here, the humidity is also displayed in %.
 
----
 
 Next up, created a payload with the state of the button and the soil humidity in %, sent it through MQTT and displayed it in dashboards in Grafana.
 
@@ -76,3 +75,20 @@ Then, connected the relay on the Raspberry Pi (3.3V, GND and GPIO5) and created 
 <p align="center">
   <img src="photos/poza_rpi.jfif" width="600">
 </p>
+
+Now, when running the code, the Gardena Watering System starts when pressing the button. 
+As a last addition to this project, generated a code that automatically turns the relay on, if the soil humidity percentage drops under 35%.
+
+<p align="center">
+  <img src="photos/humidity_controlled_relay.JPG" width="600">
+</p>
+
+---
+
+## Conclusion
+
+This project successfully integrates a soil moisture sensor, an MCP3208 ADC, a Raspberry Pi, a button, and a relay into a functional automated irrigation system. The Raspberry Pi reads soil moisture levels in real time, sends data to an MQTT broker, visualizes it in Grafana, and automatically controls a relay connected to a water pump whenever the soil becomes too dry. A manual button also provides the ability to toggle automation mode, combining both automatic and manual control in a simple and reliable design.
+The project is useful as a low-cost smart irrigation prototype, showing how IoT and automation can reduce water waste and ensure plants are watered only when necessary. By publishing data through MQTT, it can be easily integrated into larger IoT projects such as SIOTIN. In such contexts, this solution could scale from individual plant care to larger agricultural or greenhouse systems, helping to improve resource efficiency and sustainability.
+
+
+
